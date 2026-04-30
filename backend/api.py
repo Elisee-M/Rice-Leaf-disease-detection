@@ -32,7 +32,3 @@ async def predict(file: UploadFile = File(...)):
 @app.get("/classes")
 def get_classes():
     return {"classes": detector.class_names}
-
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)

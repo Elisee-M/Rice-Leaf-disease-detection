@@ -6,7 +6,7 @@ import os
 class RiceDiseaseDetector:
     def __init__(self, model_path=None, class_names_path=None):
         if model_path is None:
-            model_path = os.path.join(os.path.dirname(__file__), '..', 'models', 'rice_disease_model.h5')
+            model_path = os.path.join(os.path.dirname(__file__), '..', 'models', 'best_model.h5')
         if class_names_path is None:
             class_names_path = os.path.join(os.path.dirname(__file__), 'class_names.json')
 
@@ -28,4 +28,4 @@ class RiceDiseaseDetector:
             'disease': self.class_names[predicted_class],
             'confidence': confidence,
             'all_scores': {self.class_names[i]: float(predictions[0][i]) for i in range(len(self.class_names))}
-        }
+        }   
