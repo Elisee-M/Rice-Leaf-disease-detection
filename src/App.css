@@ -10,6 +10,14 @@ h1 {
   color: #2e7d32;
 }
 
+.model-status {
+  margin: 10px 0;
+  padding: 8px;
+  border-radius: 5px;
+  background: #f0f0f0;
+  font-size: 14px;
+}
+
 .upload-area {
   border: 2px dashed #ccc;
   border-radius: 10px;
@@ -25,6 +33,7 @@ h1 {
 }
 
 .loading {
+  margin: 20px 0;
   color: #2e7d32;
   font-weight: bold;
 }
@@ -34,4 +43,28 @@ h1 {
   padding: 20px;
   background: #e8f5e9;
   border-radius: 10px;
+  text-align: left;
+}
+
+.score-item {
+  margin: 10px 0;
+}
+
+.score-item span:first-child {
+  display: inline-block;
+  width: 150px;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #e0e0e0;
+  border-radius: 4px;
+  margin-top: 5px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #4caf50;
+  transition: width 0.3s;
 }
